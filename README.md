@@ -6,6 +6,7 @@
 
 ## 使用方法(Usage)
 `yarn start`
+
  ※予め、yarnとPython(Anaconda推奨)をインストールする必要があります。
 
 ## [ライセンス(Licence): AGPL-3.0](/LICENSE)
