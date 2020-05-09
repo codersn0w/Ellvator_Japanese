@@ -1,0 +1,44 @@
+{
+  "name": "Ellvator_Japanese",
+  "version": "1.0.0",
+  "description": "A web browser containing metasearch engine called Ellpedia.",
+  "keywords": [
+    "electron",
+    "browser",
+    "metasearch"
+  ],
+  "main": "index.js",
+  "author": "ThunderRa1n",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thunderra1n/Ellvator_Japanese"
+  },
+  "files": [
+    "index.js",
+    "useConnect.js",
+    "control.js"
+  ],
+  "scripts": {
+    "docs": "documentation build *.js -f html -o docs",
+    "start:control": "npx babel --watch example/renderer/control.jsx --out-file example/renderer/control-compiled.js",
+    "start": "electron example/main.js"
+  },
+  "dependencies": {
+    "electron-log": "^3.0.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "child_process": "^1.0.2",
+    "classnames": "^2.2.6",
+    "electron": "^6.1.4",
+    "file-url": "^2.0.2",
+    "python-shell": "^2.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "request-promise": "^4.2.5"
+  }
+}
