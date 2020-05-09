@@ -7,6 +7,8 @@
 
 
 ## 使用方法(Usage)
+`yarn install`
+
 `yarn start`
 
  ※予め、yarnとPython(Anaconda推奨)をインストールする必要があります。
