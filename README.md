@@ -7,7 +7,7 @@
 
 ## スクリーンショット(Screenshot)
 
-## [License](/LICENSE)
+## [ライセンス(License)](/LICENSE)
 
 ## Webブラウザのベース(electron-as-browser)
 <https://github.com/hulufei/electron-as-browser> (MIT Licence)
