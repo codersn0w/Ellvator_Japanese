@@ -6,6 +6,7 @@
  ※予め、yarnとPython(Anaconda推奨)をインストールする必要があります。
 
 ## スクリーンショット(Screenshot)
+![Screenshot1](https://github.com/thunderra1n/Ellvator_Japanese/blob/master/screenshot1.png)
 
 ## [ライセンス(License)](/LICENSE)
 
