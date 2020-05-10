@@ -4,7 +4,7 @@ const fileUrl = require('file-url');
 const BrowserLikeWindow = require('../index');
 const {PythonShell} = require('python-shell');
 const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-var exec = require('child_process').exec
+const exec = require('child_process').exec
 
 let browser;
 
@@ -25,15 +25,15 @@ function createWindow() {
 app.on('ready', async () => {
   PythonShell.run(`${__dirname}/Ellpedia/jp/webapp.py`, null, function (err, result) {
     if (err) throw err;
-    console.log(result)})
+    console.log(result)});
   PythonShell.run(`${__dirname}/Ellpedia/en/webapp.py`, null, function (err, result) {
-    console.log(result)})
+    console.log(result)});
   PythonShell.run(`${__dirname}/Ellpedia/academic/webapp.py`, null, function (err, result) {
     if (err) throw err;
-    console.log(result)})
+    console.log(result)});
   PythonShell.run(`${__dirname}/Ellpedia/ellza/webapp.py`, null, function (err, result) {
     if (err) throw err;
-    console.log(result)})
+    console.log(result)});
     await _sleep(1000);
     createWindow();
 });
