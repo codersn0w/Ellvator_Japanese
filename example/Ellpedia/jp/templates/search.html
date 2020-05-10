@@ -162,20 +162,20 @@
 
   {% for w in wiki_results %}
       <div class="w_result">
-        <a href="{{w['url']}}" class="wiki_link"><div class="w_title">{{w['title']}}</div></a>
+        <a href="{{w['url']}}" class="wiki_link" target="_blank"><div class="w_title">{{w['title']}}</div></a>
         <div class="xbutton"><span style="color: #eb615e;">•</span> <span style="color:#f6cb32">•</span> <span style="color:#7aea45">•</span></div>
-        <div class="descr">{{w['descr']}}<br><br><a href="{{w['url']}}">Continue Reading...</a></div>
-        <div class="archive">[<a href="https://web.archive.org/web/{{w['url']}}">Web Archive</a>]</div>
+        <div class="descr">{{w['descr']}}<br><br><a href="{{w['url']}}" target="_blank">Continue Reading...</a></div>
+        <div class="archive">[<a href="https://web.archive.org/web/{{w['url']}}" target="_blank">Web Archive</a>]</div>
       </div>
     {% endfor %}
 
   {% for t in top_results %}
       <div class="result">
-        <a href="{{t['url']}}"><div class="title">{{t['title']}}</div></a>
+        <a href="{{t['url']}}" target="_blank"><div class="title">{{t['title']}}</div></a>
         <div class="url">{{t['d_url']}}</div>
         <div class="xbutton"><span style="color: #eb615e;">•</span> <span style="color:#f6cb32">•</span> <span style="color:#7aea45">•</span></div>
         <div class="descr">{{t['descr']}}</div>
-        <div class="archive">[<a href="https://web.archive.org/web/{{t['url']}}">Web Archive</a>]</div>
+        <div class="archive">[<a href="https://web.archive.org/web/{{t['url']}}" target="_blank">Web Archive</a>]</div>
       </div>
     {% endfor %}
 
@@ -200,11 +200,11 @@
 
   {% for g in g_results %}
       <div class="result">
-        <a href="{{g['url']}}"><div class="title">{{g['title']}}</div></a>
+        <a href="{{g['url']}}" target="_blank"><div class="title">{{g['title']}}</div></a>
         <div class="url">{{g['d_url']}}</div>
         <div class="xbutton"><span style="color: #eb615e;">•</span> <span style="color:#f6cb32">•</span> <span style="color:#7aea45">•</span></div>
         <div class="descr">{{g['descr']}}</div>
-        <div class="archive">[<a href="https://web.archive.org/web/{{g['url']}}">Web Archive</a>]</div>
+        <div class="archive">[<a href="https://web.archive.org/web/{{g['url']}}" target="_blank">Web Archive</a>]</div>
       </div>
     {% endfor %}
 
@@ -233,11 +233,11 @@
 
   {% for b in b_results %}
       <div class="result">
-        <a href="{{b['url']}}"><div class="title">{{b['title']}}</div></a>
+        <a href="{{b['url']}}" target="_blank"><div class="title">{{b['title']}}</div></a>
           <div class="url">{{b['d_url']}}</div>
           <div class="xbutton"><span style="color: #eb615e;">•</span> <span style="color:#f6cb32">•</span> <span style="color:#7aea45">•</span></div>
           <div class="descr">{{b['descr']}}</div>
-          <div class="archive">[<a href="https://web.archive.org/web/{{b['url']}}">Web Archive</a>]</div>
+          <div class="archive">[<a href="https://web.archive.org/web/{{b['url']}}" target="_blank">Web Archive</a>]</div>
         </div>
 
     {% endfor %}

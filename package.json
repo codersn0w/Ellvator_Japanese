@@ -34,7 +34,7 @@
     "@babel/preset-react": "^7.0.0",
     "child_process": "^1.0.2",
     "classnames": "^2.2.6",
-    "electron": "^6.1.4",
+    "electron": "8.2.5",
     "electron-packager": "^14.2.1",
     "file-url": "^2.0.2",
     "python-shell": "^2.0.0",
