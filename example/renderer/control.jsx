@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import cx from 'classnames';
 import useConnect from '../../useConnect';
 import * as action from '../../control';
+import valid_url from 'valid-url';
 
 const IconLoading = () => (
   <svg
@@ -107,7 +108,13 @@ function Control() {
 
     let href = v;
     if (!/^.*?:\/\//.test(v)) {
-      href = `http://localhost:50000/search?q=${v}&p=1`;
+      if(valid_url.isUri(v)){
+        href = v;
+      }else if(valid_url.isUri(`http://${v}`)){
+        href = `http://${v}`;
+      }else{
+        href = `http://localhost:50000/search?q=${v}&p=1`;
+      }
     }
     action.sendEnterURL(href);
   };
