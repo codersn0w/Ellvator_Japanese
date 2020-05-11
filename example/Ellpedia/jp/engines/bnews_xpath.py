@@ -32,14 +32,13 @@ def bn_search(query, ua):
         title = ''.join(n.xpath(title_xpath))
         source = n.xpath(source_xpath)[0]
         time = n.xpath(time_xpath)[0] + '前'
-        if source not in ['Al-seyassah', 'hnmag.ca', 'Motoring Research']:
-          results.append({'url': url,
-                    'title': title,
-                    'num': num,
-                    'source': source,
-                    'time': time,
-                    })
-          num+=1
+        results.append({'url': url,
+                  'title': title,
+                  'num': num,
+                  'source': source,
+                  'time': time,
+                  })
+        num+=1
       else:
         break
     return results
