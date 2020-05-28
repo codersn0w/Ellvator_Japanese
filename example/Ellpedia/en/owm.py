@@ -35,7 +35,7 @@ try:
     ys[city] = now_data
     time.sleep(3)
   ys["time"] = datetime.now(pytz.utc).strftime("%m/%d %H:%M (UTC)")
-  fw = open('/home/ellpedia/ellpedia.com/public_html/en/static/json/weather.json', 'w')
+  fw = open('/path/to/weather.json', 'w')
   json.dump(ys, fw, indent = 4)
 
 except:

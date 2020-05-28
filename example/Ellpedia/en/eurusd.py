@@ -24,7 +24,7 @@ try:
   content["decimal"] = dec.lstrip('0')
   ys["EURUSD"] = content
   ys["time"] = datetime.now().strftime("%m/%d %H:%M")
-  fw = codecs.open('/home/ellpedia/ellpedia.com/public_html/en/static/json/stocks.json', 'w')
+  fw = codecs.open('/path/to/stocks.json', 'w')
   json.dump(ys, fw, indent = 4, ensure_ascii=False)
 except:
 	pass

@@ -34,7 +34,7 @@ try:
     ys[city] = now_data
     time.sleep(3)
   ys["time"] = datetime.now().strftime("%m/%d %H:%M (JST)")
-  fw = open('/home/ellpedia/ellpedia.com/public_html/static/json/weather.json', 'w')
+  fw = open('/path/to/weather.json', 'w')
   json.dump(ys, fw, indent = 4)
 
 except:
